@@ -1,0 +1,55 @@
+treb:
+  Detached:
+    page_start: 7
+    page_end: 8
+    collection: TREB_data
+  Semi_detached:
+    page_start: 9
+    page_end: 10
+    collection: TREB_data
+  Condo_town:
+    page_start: 11
+    page_end: 12
+    collection: TREB_data
+  Condo:
+    page_start: 13
+    page_end: 14
+    collection: TREB_data
+  Lin:
+    page_start: 15
+    page_end: 16
+    collection: TREB_data
+  Row_attached_town:
+    page_start: 17
+    page_end: 18
+    collection: TREB_data
+  Coop_apt:
+    page_start: 19
+    page_end: 20
+    collection: TREB_data
+  Detached_condo:
+    page_start: 21
+    page_end: 22
+    collection: TREB_data
+  Coowner_apt:
+    page_start: 23
+    page_end: 24
+    collection: TREB_data
+  Aggregate:
+    page_start: 3
+    page_end: 4
+    collection: TREB_data
+  sales_by_price:
+    page_start: 2
+    page_end: 2
+    collection: TREB_priceWiseSplit
+
+collections:
+  TREB_data:
+    date_col: reportDate
+    nested: False
+    page_start: 3
+    page_end: 24
+  TREB_priceWiseSplit:
+    date_col: reportDate
+    nested: False
