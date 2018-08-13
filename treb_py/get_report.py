@@ -1,5 +1,5 @@
 import datetime
-import urllib2
+from urllib.request import urlopen
 import requests
 import logging
 from dateutil.relativedelta import relativedelta
@@ -40,7 +40,7 @@ def download_report(download_url, saved_file_name=None):
     r = requests.get(download_url)
 
     if r.status_code==200:
-        response = urllib2.urlopen(download_url)
+        response = urlopen(download_url)
 
         if not saved_file_name:
             filename = download_url[download_url.rindex('/')+1:]

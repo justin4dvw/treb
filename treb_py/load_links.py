@@ -35,3 +35,15 @@ def load_mapping(filename=None):
             print(exc)
 
     return _content
+
+def get_exclusion(config):
+    _exclusion=[]
+    if 'exclude' in config:
+        if '-' in config['exclude']:
+            _exclusion = [i for i in range(config['exclude'].split('-'))]
+        elif ',' in config['exclude']:
+            _exclusion = config['exclude'].split(',')
+        else:
+            _exclusion = config['exclude']
+    exclusion=[int(i) for i in _exclusion ]
+    return exclusion
