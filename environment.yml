@@ -1,4 +1,4 @@
-name: py3
+name: treb
 channels:
   - r
   - conda-forge
@@ -47,5 +47,6 @@ dependencies:
   - r-runit=0.4.26=mro343_0
   - r-spatial=7.3_11=mro343_0
   - r-survival=2.41_3=mro343_0
+  - pip:
+      - git+https://github.com/justin4dvw/util4d.git
 prefix: C:\Users\Cristina\Anaconda2\envs\py3
-
